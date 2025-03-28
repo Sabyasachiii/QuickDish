@@ -1,0 +1,64 @@
+.app-download {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.app-download p {
+    font-size: 24px;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.app-downlod-platforms {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.app-downlod-platforms img {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.app-downlod-platforms img:hover {
+    transform: scale(1.1);
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+    .app-download p {
+        font-size: 20px; /* Adjust font size for tablet */
+        margin-bottom: 20px;
+    }
+
+    .app-downlod-platforms {
+        gap: 15px; /* Reduce the gap between images */
+    }
+
+    .app-downlod-platforms img {
+        width: 130px; /* Adjust image width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .app-download p {
+        font-size: 18px; /* Further reduce font size for mobile */
+        margin-bottom: 15px;
+    }
+
+    .app-downlod-platforms {
+        flex-direction: column; /* Stack the images vertically for mobile */
+        gap: 10px; /* Reduce gap between images */
+    }
+
+    .app-downlod-platforms img {
+        width: 120px; /* Further reduce image width */
+    }
+}

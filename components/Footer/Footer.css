@@ -1,0 +1,143 @@
+/* Footer.css */
+
+.footer {
+    background-color: #323232;
+    color: white;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.footer-content-left,
+.footer-content-center,
+.footer-content-right {
+    width: 30%;
+    padding: 0 10px;
+}
+
+.footer-content-left img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-content-left p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.footer-social-icons img {
+    width: 25px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.footer-content-center h2,
+.footer-content-right h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-content-center ul,
+.footer-content-right ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content-center li,
+.footer-content-right li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer-content-center li:hover,
+.footer-content-right li:hover {
+    color: #1abc9c;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #34495e;
+    margin: 30px 0;
+}
+
+.footer-copyright {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content-left,
+    .footer-content-center,
+    .footer-content-right {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-content-left img {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+
+    .footer-content-center h2,
+    .footer-content-right h2 {
+        font-size: 16px;
+    }
+
+    .footer-content-center li,
+    .footer-content-right li {
+        font-size: 14px;
+    }
+
+    .footer-social-icons img {
+        width: 20px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content-left,
+    .footer-content-center,
+    .footer-content-right {
+        width: 100%;
+    }
+
+    .footer-content-left img {
+        width: 100px;
+    }
+
+    .footer-content-center h2,
+    .footer-content-right h2 {
+        font-size: 14px;
+    }
+
+    .footer-content-center li,
+    .footer-content-right li {
+        font-size: 12px;
+    }
+
+    .footer-social-icons img {
+        width: 18px;
+    }
+
+    .footer-copyright {
+        font-size: 12px;
+    }
+}
